@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #6B727A;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    color: white;
+    height: 90px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+
+nav ul li a:hover {
+
+    color: lightseagreen;
+    text-decoration: underline 3px solid seagreen;
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+	nav ul {
+		width: 50%;
+	}
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+	nav ul {
+        display: none;
+		position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #6B727A;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+	}
+    .main {
+        width: 80%;
+    }
+
+    .content{
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #D8D9DD;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+    }
+
+    .sosmed {
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #6B727A;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+    }
+
+    .kontak{
+        margin-left: 1%;
+        padding: 23%;
+    }
+
+    .footer {
+        width: 50%;
+    }
+}
+
+.nezlog{
+	float: left;
+	padding-left: 30px;
+	font-size: 1em;
+}
+
+.nezlog a{
+    color: white;
+}
+
+.nezlog :hover{
+    color: lightseagreen;
+    text-decoration: underline 3px solid seagreen;
+}
+
+.main {
+    background-color: #D8D9DD;
+    height: 680px;
+    width: 100%;
+}
+
+.main-logo {
+    padding-left: 50px;
+    padding-top: 45px;
+    float: left;
+    
+}
+
+.bulat {
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.content {
+    float: left;
+    font-size: 45px;
+    margin-left: 50px;
+    padding-top: 45px;
+}
+
+.content p span{
+    border-bottom: 4px solid #A1A9B1;
+}
+
+.content li {
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.animasi {
+    transition: all 0.1s;
+    -webkit-trantition: all 0.1s;
+  }
+  
+  .tombol-aktif {
+    padding: 10px 40px;
+    margin-left: 7.5%;
+    border-radius: 10px;
+    margin-top: 100px;
+    float: left;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    color: #D8D9DD;
+    text-decoration: none;
+  }
+  
+  .biru {
+    background-color: #6B727A;
+    border-bottom: 5px solid #A1A9B1;
+    text-shadow: 0px -2px #A1A9B1;
+  }
+  
+  .tombol-aktif:active{
+    transform: translate(1000px,52px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+  }
+
+.footer {
+    background-color: #A1A9B1;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    margin-left: 80px;
+    float: left;
+}
+
+.sosmed ul{
+    display: flex;
+    list-style: none;
+    float: left;
+    justify-content: space-between;
+}
+
+.sosmed li{
+    padding-right: 80px;
+    padding-left: 50px;
+    margin-left: 10px;
+}
+
+.sosmed li a {
+    margin-left: 60px;
+}
+
+.sosmed a {
+    color: black;
+}
+
+.sosmed li :hover{
+    color: white;
+    text-decoration: underline 1px solid black;
+}
+
+.copy {
+    float: right;
+    margin: 5%;
+    font-size: 13px;
+}
